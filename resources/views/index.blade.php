@@ -1,3 +1,5 @@
+<link href="{{ asset("style/app.css") }}" rel="stylesheet">
+
 <h1>Welcome.</h1>
 <div>
     <a href="/login">Login</a>
