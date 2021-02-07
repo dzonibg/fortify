@@ -135,6 +135,7 @@ return [
         Features::resetPasswords(),
         Features::updateProfileInformation(),
         Features::updatePasswords(),
+        Features::canUpdateProfileInformation()
     ],
 
 ];

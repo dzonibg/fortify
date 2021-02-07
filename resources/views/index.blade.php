@@ -12,6 +12,8 @@
 
 @auth()
     You are logged in as {{ auth()->user()->name }}
+    <br>
+    <a href="/update">Update user info</a>
     <form method="POST" action="{{ route('logout') }}" name="logout">
         @csrf
         <a href="#" onclick="document.logout.submit();">Logout</a>

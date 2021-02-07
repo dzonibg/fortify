@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/secure', function () {
     return view("secure");
 })->middleware('auth');
+
+Route::get('/update', function () {
+    return view("auth.update");
+})->middleware('auth');
