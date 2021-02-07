@@ -10,8 +10,11 @@
 
 @auth()
     You are logged in as {{ auth()->user()->name }}
-    <form method="POST" action="{{route('logout')}}">
+    <form method="POST" action="{{ route('logout') }}" name="logout">
         @csrf
-        <button type="submit">Logout</button>
+        <a href="#" onclick="document.logout.submit();">Logout</a>
     </form>
 @endauth
+<div>
+<a href="secure">Secure page.</a>
+</div>
