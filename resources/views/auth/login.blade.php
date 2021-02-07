@@ -6,3 +6,8 @@ Login.
     <button type="submit">Login</button>
     @csrf
 </form>
+<ul>
+    @foreach($errors->all() as $error)
+        <li>{{$error}}</li>
+    @endforeach
+</ul>
