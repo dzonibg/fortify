@@ -1,6 +1,5 @@
-<link href="{{ asset("style/app.css") }}" rel="stylesheet">
-
-<h1>Welcome.</h1>
+@extends("layout.main")
+@section("content")
 <div>
     <a href="/login">Login</a>
     <br>
@@ -22,3 +21,13 @@
 <div>
 <a href="secure">Secure page.</a>
 </div>
+
+    <div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </div>
+
+
+@endsection
+
