@@ -75,6 +75,18 @@ div {
     font-family: Calibri, serif;
 }
 
+div .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+div .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 a {
     font-family: Calibri, serif;
 }
