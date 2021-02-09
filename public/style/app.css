@@ -69,3 +69,12 @@ input {
 .btn:hover {
     background: #0c72ba;
 }
+
+div {
+    font-size: medium;
+    font-family: Calibri, serif;
+}
+
+a {
+    font-family: Calibri, serif;
+}
