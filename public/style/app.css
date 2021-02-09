@@ -15,6 +15,10 @@
 }
 
 .menu li {
+    float: left;
+}
+
+.menu .auth {
     float: right;
 }
 
@@ -29,4 +33,39 @@
 
 .menu li a:hover {
     background-color: #4a5568;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: large;
+}
+
+input {
+    color: #516881;
+    border: #2653b7 1px solid;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: medium;
+}
+
+.btn {
+    height: 35px;
+    background: #094877;
+    color: #a0aec0;
+    border: #4a5568 solid 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.btn:hover {
+    background: #0c72ba;
 }

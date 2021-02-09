@@ -1,5 +1,6 @@
 @extends("layout.main")
 @section("content")
+    <div class="container">
 @guest()
     You are a guest.
 @endguest
@@ -10,5 +11,6 @@
 <div>
 <a href="secure">Secure page.</a>
 </div>
+    </div>
 @endsection
 

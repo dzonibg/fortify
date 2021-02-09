@@ -1,15 +1,19 @@
 <link href="{{ asset("style/app.css") }}" rel="stylesheet">
  <div>
-
 <ul class="menu">
-    <li><a href="/login">Login</a></li>
-    <li><a href="/register">Register</a></li>
-    <form method="POST" action="{{ route('logout') }}" name="logout">
+        <li><a href="/">Main</a></li>
+    @guest()
+        <li class="auth"><a href="/login">Login</a></li>
+        <li class="auth"><a href="/register">Register</a></li>
         @csrf
-        <li><a href="#" onclick="document.logout.submit();">Logout</a></li>
-    </form>
+            @endguest
+            @auth()
+            <form method="POST" action="{{ route('logout') }}" name="logout">
+                @csrf
+            <li class="auth"><a href="#" onclick="document.logout.submit();">Logout</a></li>
+        </form>
+            @endauth
 </ul>
-
  </div>
 
 @yield("content")

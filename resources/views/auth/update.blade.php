@@ -1,6 +1,6 @@
-<h1>Update user info</h1>
-
-<div>
+@extends("layout.main")
+@section("content")
+<div class="container">
     <form method="POST" action="{{ route("user-profile-information.update") }}">
         @method("PUT")
 
@@ -13,10 +13,12 @@
         <br><br>
         <button type="submit">Update info</button>
     </form>
-</div>
+
 
 <ul>
     @foreach($errors->all() as $error)
         <li>{{$error}}</li>
     @endforeach
 </ul>
+</div>
+@endsection
